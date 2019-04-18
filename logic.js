@@ -7,4 +7,18 @@
     storageBucket: "train-scheduler-8109a.appspot.com",
     messagingSenderId: "238314913128"
   };
+
   firebase.initializeApp(config);
+
+  var database = firebase.database();
+
+  var name = "";
+  var destination = "";
+  var frequency = "";
+  var arrival = "";
+  var minutesAway = "";
+
+  // use momentjs to calculate the next arrival and minutes away based on the train frequency
+  // create a click function for the submit button
+  // use jquery to grab user input and append the corresponding the columns with new information
+  // store train information in the firebase database
